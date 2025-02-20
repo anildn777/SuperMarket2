@@ -1,11 +1,12 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Product {
-    // Initialization
+public class PriceCalculation {
+
     Scanner scanner = new Scanner(System.in);
     ArrayList<Double> price = new ArrayList<Double>();
-    String[] productQuantity = { "ersten", "zweiten", "dritten", "vierten", "fünften" };
+    String[] productQuantity = {"ersten", "zweiten", "dritten", "vierten", "fünften"};
+
 
     public void addition() {
 
@@ -18,9 +19,9 @@ public class Product {
 
         }
 
-        double vAT = sum * 0.19;
+        double vAT = sum / 1.19;
         System.out.println("Gesamtpreis: " + sum + " €");
-        System.out.println("Mehrwertsteueranteil in Euro: " + vAT + " €");
+        System.out.println("Preis nach Mehrwertsteuer in Euro: " + vAT + " €");
         System.out.println("Produktmenge: " + price.size() + " Stück");
     }
 }
