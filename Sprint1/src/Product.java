@@ -2,11 +2,10 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Product {
-
+    // Initialization
     Scanner scanner = new Scanner(System.in);
     ArrayList<Double> price = new ArrayList<Double>();
-    String[] productQuantity = {"ersten", "zweiten", "dritten", "vierten", "fünften"};
-
+    String[] productQuantity = { "ersten", "zweiten", "dritten", "vierten", "fünften" };
 
     public void addition() {
 
